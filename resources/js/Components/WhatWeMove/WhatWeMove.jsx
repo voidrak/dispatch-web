@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WhatWeMove() {
   return (
-    <div className="min-h-screen bg-bg-light px-1 py-8">
+    <div className="flex min-h-screen flex-col bg-bg-light px-1 py-8">
       <div className="mx-auto max-w-[550px] text-center sm:mx-0 sm:ml-8 sm:text-left lg:max-w-[650px] xl:px-16">
         <h1 className="text-nowrap text-4xl font-extrabold sm:text-6xl lg:text-8xl 2xl:text-9xl">
           What We Move
@@ -45,6 +45,11 @@ export default function WhatWeMove() {
           alt="track-image-6"
         />
       </div>
+      <button className="mx-auto -translate-y-4 rounded-md bg-black px-8 py-2 text-white duration-200 hover:scale-105 lg:-translate-y-16 lg:px-16 lg:py-4 xl:-translate-y-24 2xl:-translate-y-32">
+        <a href="#contact" className="">
+          MORE
+        </a>
+      </button>
     </div>
   );
 }
