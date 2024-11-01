@@ -9,8 +9,13 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        "bg-dark": "#040714",
+        "bg-light": "#b8bac6",
+        "golden-accent": "#d88e00",
+      },
       fontFamily: {
-        sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+        Satoshi: ["Satoshi", "ui-sans-serif"],
       },
     },
   },
