@@ -4,6 +4,7 @@ import Header from "../Components/Header/Header";
 import Landing from "../Components/HomeLanding/Landing";
 import AboutUs from "../Components/AboutUs/AboutUs";
 import WhatWeMove from "../Components/WhatWeMove/WhatWeMove";
+import FrequentlyQuestions from "../Components/Frequently/FrequentlyQuestions";
 export default function Home() {
   return (
     <div className="w-full font-Satoshi">
@@ -11,6 +12,7 @@ export default function Home() {
       <Landing />
       <AboutUs />
       <WhatWeMove />
+      <FrequentlyQuestions />
     </div>
   );
 }

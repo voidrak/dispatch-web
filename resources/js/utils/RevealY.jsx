@@ -7,7 +7,7 @@ const RevealY = ({ children }) => {
   const mainControls = useAnimation();
   const revelVariants = {
     hidden: { opacity: 0, y: 80 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 1 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.5 } },
   };
   useEffect(() => {
     if (isInView) {
