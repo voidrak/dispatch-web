@@ -7,7 +7,7 @@ import WhatWeMove from "../Components/WhatWeMove/WhatWeMove";
 import FrequentlyQuestions from "../Components/Frequently/FrequentlyQuestions";
 export default function Home() {
   return (
-    <div className="w-full font-Satoshi">
+    <div className="w-full overflow-x-hidden font-Satoshi">
       <Header />
       <Landing />
       <AboutUs />

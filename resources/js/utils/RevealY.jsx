@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, delay } from "framer-motion";
 
-const RevealY = ({ children }) => {
+const RevealY = ({ children, delay = 0 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: "all" });
   const mainControls = useAnimation();
   const revelVariants = {
     hidden: { opacity: 0, y: 80 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.5 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: delay } },
   };
   useEffect(() => {
     if (isInView) {

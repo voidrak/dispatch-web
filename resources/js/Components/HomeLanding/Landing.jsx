@@ -4,7 +4,7 @@ import Reveal from "../../utils/RevealY";
 export default function Landing() {
   return (
     <div className="flex min-h-svh items-center bg-[url('images/home-landing-small.jpg')] bg-center text-white sm:bg-[url('/images/home-landing.webp')] sm:bg-center lg:bg-cover">
-      <Reveal>
+      <Reveal delay={0.5}>
         <div className="ml-3 max-w-[420px] sm:ml-8 sm:max-w-[600px] lg:ml-16 lg:max-w-[720px]">
           <h1 className="text-4xl font-bold 2xl:text-6xl">Truck Dispatch</h1>
 
