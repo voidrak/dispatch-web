@@ -1,10 +1,9 @@
-import React from "react";
 import Accordion, { AccordianItem } from "../../utils/Accordion";
 import RevealY from "../../utils/RevealY";
 
 export default function FrequentlyQuestions() {
   return (
-    <div className="min-h-screen bg-bg-dark px-4 pt-8 text-white sm:px-8 md:pt-16 lg:pt-20 xl:px-14 2xl:px-16">
+    <div className="min-h-screen bg-bg-dark px-4 py-8 text-white sm:px-8 md:py-16 lg:py-24 xl:px-14 2xl:px-16">
       <div className="text-4xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
         <RevealY>
           <h1 className="">Frequently</h1>

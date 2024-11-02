@@ -4,7 +4,10 @@ import RevealXRight from "../../utils/RevealXRight";
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col items-center gap-x-2 bg-bg-light px-4 py-8 pt-8 sm:flex-row xl:justify-center 2xl:py-48">
+    <div
+      id="about"
+      className="flex flex-col items-center gap-x-2 bg-bg-light px-4 py-8 pt-8 sm:flex-row xl:justify-center 2xl:py-48"
+    >
       <RevealXLeft>
         <div className="mx-auto max-w-[550px] text-center sm:text-left lg:max-w-[650px]">
           <h1 className="my-2 text-5xl font-extrabold md:text-6xl lg:text-8xl xl:text-9xl">

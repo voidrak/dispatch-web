@@ -7,6 +7,10 @@
   src: url("/fonts/Satoshi-Regular.woff ");
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -19,7 +23,9 @@
 
 .line {
   fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition:
+    stroke-dasharray 400ms,
+    stroke-dashoffset 400ms;
   stroke: #d88e00;
   stroke-width: 5.5;
   stroke-linecap: round;
