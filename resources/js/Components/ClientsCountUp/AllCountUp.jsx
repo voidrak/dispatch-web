@@ -6,7 +6,7 @@ import RevenueCountUp from "./RevenueCountUp";
 export default function AllCountUp() {
   return (
     <div className="flex w-full justify-center bg-bg-light">
-      <div className="container mx-auto grid max-w-[1024px] items-center justify-around gap-y-4 py-8 sm:flex sm:py-16 lg:py-24">
+      <div className="container mx-auto grid max-w-[1024px] items-center justify-around gap-y-4 py-8 sm:flex sm:py-16 lg:py-24 xl:py-32 2xl:py-48">
         <div className="space-y-2 md:space-y-4 lg:space-y-6">
           <div className="flex justify-center text-5xl font-extrabold min-[450px]:text-6xl sm:text-5xl md:gap-x-1 md:text-6xl lg:text-7xl">
             <BookedCountUp />
