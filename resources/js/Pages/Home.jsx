@@ -5,6 +5,7 @@ import Landing from "../Components/HomeLanding/Landing";
 import AboutUs from "../Components/AboutUs/AboutUs";
 import WhatWeMove from "../Components/WhatWeMove/WhatWeMove";
 import FrequentlyQuestions from "../Components/Frequently/FrequentlyQuestions";
+import AllCountUp from "../Components/ClientsCountUp/AllCountUp";
 export default function Home() {
   return (
     <div className="w-full overflow-x-hidden font-Satoshi">
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutUs />
       <WhatWeMove />
       <FrequentlyQuestions />
+      <AllCountUp />
     </div>
   );
 }
