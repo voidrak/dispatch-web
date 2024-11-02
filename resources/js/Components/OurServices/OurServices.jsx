@@ -7,7 +7,7 @@ export default function OurServices() {
         Our Services
       </h1>
       <div className="mx-auto grid place-items-center gap-x-1 gap-y-4 max-xl:max-w-screen-lg md:grid-cols-2 xl:max-w-[1390px] xl:grid-cols-3">
-        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
+        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] duration-700 hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
           <svg
             className="size-10 fill-[#292929]"
             xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ export default function OurServices() {
           <h1 className="">Dispatching</h1>
           <p className="">From 5% of gross</p>
         </div>
-        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
+        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] duration-700 hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
           <svg
             className="size-10 fill-[#292929]"
             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ export default function OurServices() {
           <h1 className="">Support 24/7</h1>
           <p className="">From 5% of gross</p>
         </div>
-        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
+        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] duration-700 hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
           <svg
             className="size-10 fill-[#292929]"
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export default function OurServices() {
           <h1 className="">Rate Negotiations</h1>
           <p className="">From 5% of gross</p>
         </div>
-        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
+        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] duration-700 hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
           <svg
             className="size-10 fill-[#292929]"
             xmlns="http://www.w3.org/2000/svg"
@@ -51,12 +51,12 @@ export default function OurServices() {
           <h1 className="">Document Management & Paperwork</h1>
           <p className="">From 5% of gross</p>
         </div>
-        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
+        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] duration-700 hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
           <InteractiveSvg />
           <h1 className="">Factoring Service</h1>
           <p className="">From 5% of gross</p>
         </div>
-        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
+        <div className="flex h-[191px] w-[100%] cursor-pointer flex-col items-center justify-center gap-y-2 rounded-xl bg-[#DEDEDE] duration-700 hover:bg-gray-400 min-[450px]:w-[410px] md:w-[370px] min-[850px]:w-[410px]">
           <svg
             className="size-10 fill-[#292929]"
             xmlns="http://www.w3.org/2000/svg"
