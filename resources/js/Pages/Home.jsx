@@ -8,6 +8,8 @@ import FrequentlyQuestions from "../Components/Frequently/FrequentlyQuestions";
 import AllCountUp from "../Components/ClientsCountUp/AllCountUp";
 import ServicesSection from "../Components/ServicesSection/ServicesSection";
 import OurServices from "../Components/OurServices/OurServices";
+import Footer from "../Components/Footer/Footer";
+import ContactUs from "../Components/ContactUs/ContactUs";
 export default function Home() {
   return (
     <div className="w-full overflow-x-hidden font-Satoshi">
@@ -19,6 +21,8 @@ export default function Home() {
       <AllCountUp />
       <ServicesSection />
       <OurServices />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
