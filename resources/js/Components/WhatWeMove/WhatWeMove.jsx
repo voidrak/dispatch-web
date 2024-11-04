@@ -3,7 +3,7 @@ import RevealXLeft from "../../utils/RevealXLeft";
 
 export default function WhatWeMove() {
   return (
-    <div className="flex flex-col bg-bg-light px-1">
+    <div id="what_we_move" className="flex flex-col bg-bg-light px-1">
       <RevealXLeft>
         <div className="mx-auto max-w-[550px] text-center sm:mx-0 sm:ml-8 sm:text-left lg:max-w-[650px] xl:px-16">
           <h1 className="text-nowrap text-4xl font-extrabold sm:text-6xl lg:text-8xl 2xl:text-9xl">

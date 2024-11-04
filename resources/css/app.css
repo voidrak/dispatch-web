@@ -6,6 +6,10 @@
   font-family: "Satoshi";
   src: url("/fonts/Satoshi-Regular.woff ");
 }
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("Fonts/ClashDisplay-Bold.woff");
+}
 
 * {
   scroll-behavior: smooth;

@@ -2,7 +2,7 @@ import InteractiveSvg from "../../utils/InteractiveSvg";
 
 export default function OurServices() {
   return (
-    <div className="bg-bg-light px-2 py-8 md:py-16 lg:py-24">
+    <div id="services" className="bg-bg-light px-2 py-8 md:py-16 lg:py-24">
       <h1 className="mb-6 text-4xl font-extrabold sm:ml-10 sm:text-5xl md:mb-8 md:text-6xl lg:pb-10 lg:text-7xl 2xl:ml-24 2xl:text-8xl">
         Our Services
       </h1>

@@ -16,6 +16,7 @@ export default {
       },
       fontFamily: {
         Satoshi: ["Satoshi", "ui-sans-serif"],
+        ClashDisplay: ["ClashDisplay", "ui-sans-serif"],
       },
     },
   },
