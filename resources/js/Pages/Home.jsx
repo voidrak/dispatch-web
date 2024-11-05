@@ -18,7 +18,6 @@ export default function Home() {
         position="top-right"
         reverseOrder={false}
         toastOptions={{
-          // Define default options
           className: "",
 
           duration: 5000,
@@ -30,7 +29,6 @@ export default function Home() {
             marginRight: "auto",
           },
 
-          // Default options for specific types
           success: {
             duration: 2000,
             theme: {

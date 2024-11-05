@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactUs;
 use Exception;
-use Illuminate\Auth\Events\Validated;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -67,7 +67,7 @@ class EmailController extends Controller
             }
             return back()->with("error", 'Unable to Submit !! please try again');
         } catch (Exception $ex) {
-            dd($ex);
+            Log::error('Email sending failed: ' . $ex->getMessage());
         }
     }
 }
