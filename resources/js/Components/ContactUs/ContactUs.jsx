@@ -1,5 +1,7 @@
 import React from "react";
 import { useForm } from "@inertiajs/react";
+import InputError from "../../utils/InputError";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function ContactUs() {
   const { data, setData, post, processing, errors, reset } = useForm({
@@ -12,12 +14,25 @@ export default function ContactUs() {
     number_track: "",
     type_track: "",
     mc_authority_paper: null,
+    W9: null,
+    certificate_of_insurance: null,
+    notice_of_assignment: null,
   });
 
   const submit = (e) => {
     e.preventDefault();
-    console.log(data);
-    post("/contact");
+
+    post("/contact", {
+      onSuccess: (response) => {
+        toast.success("Form submitted successfully!");
+        console.log("Form submitted successfully!");
+        reset();
+      },
+      onError: (error) => {
+        toast.error("Error submitting the form !! Try again");
+        console.error("There was an error submitting the form:", error);
+      },
+    });
   };
   return (
     <div id="contact" className="bg-bg-light px-4 py-6">
@@ -25,13 +40,6 @@ export default function ContactUs() {
         Get In Touch
       </h1>
 
-      {errors && (
-        <div className="text-red-500">
-          {Object.keys(errors).map((key) => (
-            <p key={key}>{errors[key]}</p>
-          ))}
-        </div>
-      )}
       <form
         onSubmit={(e) => {
           submit(e);
@@ -56,6 +64,8 @@ export default function ContactUs() {
                 onChange={(e) => setData("full_name", e.target.value)}
                 placeholder="Joe Doe"
               />
+
+              <InputError message={errors.full_name} className="mt-2" />
             </div>
           </div>
           <div className="-mx-3 mb-6 flex flex-wrap">
@@ -94,6 +104,7 @@ export default function ContactUs() {
                 onChange={(e) => setData("email", e.target.value)}
                 placeholder="Email Address "
               />
+              <InputError message={errors.email} className="mt-2" />
             </div>
           </div>
           <div className="-mx-3 mb-6 flex flex-wrap">
@@ -113,6 +124,7 @@ export default function ContactUs() {
                 onChange={(e) => setData("phone_number", e.target.value)}
                 placeholder="+01123456789"
               />
+              <InputError message={errors.phone_number} className="mt-2" />
             </div>
             <div className="w-full px-3 md:w-1/2">
               <label
@@ -150,6 +162,7 @@ export default function ContactUs() {
                 onChange={(e) => setData("MC", e.target.value)}
                 placeholder="123456"
               />
+              <InputError message={errors.MC} className="mt-2" />
             </div>
             <div className="mb-6 w-full px-3 md:mb-0 md:w-1/3">
               <label
@@ -204,7 +217,7 @@ export default function ContactUs() {
               onChange={(e) => setData("mc_authority_paper", e.target.files[0])}
             />
           </div>
-          {/* <div className="w-full px-3">
+          <div className="w-full px-3">
             <label
               className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
               htmlFor="W9"
@@ -215,9 +228,7 @@ export default function ContactUs() {
               className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
               id="W9"
               name="W9"
-
-              value={data.W9}
-               onChange={(e) => setData("W9", e.target.files[0])}
+              onChange={(e) => setData("W9", e.target.files[0])}
               type="file"
             />
           </div>
@@ -232,9 +243,9 @@ export default function ContactUs() {
               className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
               id="certificate_of_insurance"
               name="certificate_of_insurance"
-
-              value={data.certificate_of_insurance}
-               onChange={(e) => setData("certificate_of_insurance", e.target.files[0])}
+              onChange={(e) =>
+                setData("certificate_of_insurance", e.target.files[0])
+              }
               type="file"
             />
           </div>
@@ -249,12 +260,12 @@ export default function ContactUs() {
               className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
               id="notice_of_assignment"
               name="notice_of_assignment"
-
-              value={data.notice_of_assignment}
-               onChange={(e) => setData("notice_of_assignment", e.target.files[0])}
+              onChange={(e) =>
+                setData("notice_of_assignment", e.target.files[0])
+              }
               type="file"
             />
-          </div> */}
+          </div>
           <button
             type="submit"
             className="ml-4 translate-y-[15px] rounded-lg bg-blue-700 px-12 py-3 text-center text-base font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300"

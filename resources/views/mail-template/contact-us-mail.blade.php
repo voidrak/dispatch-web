@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <h4>Hello Admin</h4>
+    <h4>Hello </h4>
     <p>You have new Enquiry</p>
 
     <p>Full Name : {{ $request['full_name'] }} </p>
+    <p>Full Name : {{ $request['company_name'] }} </p>
     <p>Email : {{ $request['email'] }} </p>
     <p>Phone Number : {{ $request['phone_number'] }} </p>
     <p>USDOT : {{ $request['USDOT'] }} </p>

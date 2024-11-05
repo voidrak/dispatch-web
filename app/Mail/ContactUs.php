@@ -16,15 +16,21 @@ class ContactUs extends Mailable
     use Queueable, SerializesModels;
 
     public $request;
-    public $fileName;
+    public $mc_authority_paper;
+    public $W9;
+    public $certificate_of_insurance;
+    public $notice_of_assignment;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($request, $fileName)
+    public function __construct($request, $mc_authority_paper, $W9, $certificate_of_insurance, $notice_of_assignment)
     {
         $this->request = $request;
-        $this->fileName = $fileName;
+        $this->mc_authority_paper = $mc_authority_paper;
+        $this->W9 = $W9;
+        $this->certificate_of_insurance = $certificate_of_insurance;
+        $this->notice_of_assignment = $notice_of_assignment;
     }
 
     /**
@@ -57,9 +63,18 @@ class ContactUs extends Mailable
     public function attachments()
     {
         $attachments  = [];
-        if ($this->fileName) {
-            $attachments = [Attachment::fromPath(public_path('\\upload\\attachment\\' . $this->fileName))];
-            return $attachments;
+        if ($this->mc_authority_paper) {
+            $attachments[] = Attachment::fromPath(public_path('\\upload\\attachment\\' . $this->mc_authority_paper));
         }
+        if ($this->W9) {
+            $attachments[] = Attachment::fromPath(public_path('\\upload\\attachment\\' . $this->W9));
+        }
+        if ($this->certificate_of_insurance) {
+            $attachments[] = Attachment::fromPath(public_path('\\upload\\attachment\\' . $this->certificate_of_insurance));
+        }
+        if ($this->notice_of_assignment) {
+            $attachments[] = Attachment::fromPath(public_path('\\upload\\attachment\\' . $this->notice_of_assignment));
+        }
+        return $attachments;
     }
 }
