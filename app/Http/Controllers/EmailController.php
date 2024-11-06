@@ -10,38 +10,33 @@ use Illuminate\Support\Facades\Mail;
 
 class EmailController extends Controller
 {
-    // public function sendEmail()
-    // {
-    //     $toEmail = "nahomabrahamofficial@gmail.com";
-    //     $message = "Nahom Abraham wants to use the dispatch services";
-    //     $subject = "New Contact form sent";
 
-    //     $response = Mail::to($toEmail)->send(new ContactUs($message, $subject));
-
-    //     dd($response);
-    // }
     public function sendContactEmail(Request $request)
     {
 
 
-        $request->validate([
-            "full_name" => "required",
-            "company_name" => "nullable",
-            "email" => "required|email",
-            "phone_number" => "required",
-            "USDOT" => "nullable",
-            "MC" => "required",
-            "number_track" => "nullable",
-            "type_track" => "nullable",
-            "mc_authority_paper" => "nullable",
-            "W9" => "nullable",
-            "certificate_of_insurance" => "nullable",
-            "notice_of_assignment" => "nullable",
-
-        ]);
-
-
         try {
+            $request->validate([
+                "full_name" => "required",
+                "company_name" => "nullable",
+                "email" => "required|email",
+                "phone_number" => "required",
+                "USDOT" => "nullable",
+                "MC" => "required",
+                "number_track" => "nullable",
+                "type_track" => "nullable",
+                "mc_authority_paper" => "nullable",
+                "W9" => "nullable",
+                "certificate_of_insurance" => "nullable",
+                "notice_of_assignment" => "nullable",
+
+            ]);
+
+            $mc_authority_paper = null;
+            $W9 = null;
+            $certificate_of_insurance = null;
+            $notice_of_assignment = null;
+
             if ($request->hasFile("mc_authority_paper")) {
                 $mc_authority_paper =   "mc_authority_paper-" . time() . "." . $request->file("mc_authority_paper")->extension();
                 $request->file("mc_authority_paper")->move("upload/attachment", $mc_authority_paper);
@@ -59,15 +54,14 @@ class EmailController extends Controller
                 $request->file("notice_of_assignment")->move("upload/attachment", $notice_of_assignment);
             }
 
-            $toEmail = $request->email;
+            $toEmail = "rakkpoper@gmail.com";
             $response = Mail::to($toEmail)->send(new ContactUs($request->all(), $mc_authority_paper, $W9, $certificate_of_insurance, $notice_of_assignment));
 
             if ($response) {
                 return back()->with("success", 'Thank You for Contacting us');
             }
-            return back()->with("error", 'Unable to Submit !! please try again');
         } catch (Exception $ex) {
-            Log::error('Email sending failed: ' . $ex->getMessage());
+            return back()->with("error", 'Unable to Submit !! please try again');
         }
     }
 }

@@ -235,7 +235,7 @@ export default function ContactUs() {
           <div className="w-full px-3">
             <label
               className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-              htmlFor="certificate_of_insurance "
+              htmlFor="certificate_of_insurance"
             >
               Certificate of Insurance
             </label>
