@@ -12,52 +12,32 @@ export default function FrequentlyQuestions() {
       </div>
       <div className="mt-4 md:mt-8">
         <Accordion>
-          <AccordianItem
-            value="1"
-            trigger="What will dispatcher services do for my business? "
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            maiores provident non nobis sed ratione laboriosam, impedit nam quam
-            fugit er
+          <AccordianItem value="1" trigger="How To Get Started?">
+            After signing up and submitting your information, we'll match you
+            with a suitable load based on your truck type, preferred area, and
+            rate preferences.
           </AccordianItem>
           <AccordianItem
             value="2"
-            trigger="What are the benefits of using a dispatcher?"
+            trigger="Why Should I Use a Dispatching Company?"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            maiores provident non nobis sed ratione laboriosam, impedit nam quam
-            fugit error, dolores praesentium. Fugit illum modi, tempore non
-            molestiae nesciunt. Officiis dicta modi voluptatem blanditiis
-            dolore. Neque
+            A Dispatching company helps streamline your trucking company by
+            finding profitable loads, optimizing routes to save time and fuel,
+            and ensuring on-time deliveries. They handle communication with
+            drivers, coordinate schedules, and manage compliance with
+            regulations. we also assist with customer relations, invoicing, and
+            quickly resolving any issues or delays, ultimately improving
+            efficiency and profitability while allowing you to focus on growing
+            your business.
           </AccordianItem>
-          <AccordianItem
-            value="3"
-            trigger="Important Notice Regarding Scamming and Our Commitment to Professionalism"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            maiores provident non nobis sed ratione laboriosam, impedit nam quam
-            fugit error,
+          <AccordianItem value="3" trigger="How Much Does It Cost?">
+            We charge just 5% on the loads we book, regardless of truck type.
           </AccordianItem>
-          <AccordianItem value="4" trigger="Disclaimers ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            maiores provident non nobis sed ratione laboriosam, impedit nam quam
-            fugit error,
-          </AccordianItem>
-          <AccordianItem value="8" trigger="How much does it cost">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            maiores provident non nobis sed ratione laboriosam, impedit nam quam
-            fugit error, dolores praesentium. Fugit illum modi, tempore non
-            molestia
-          </AccordianItem>
-          <AccordianItem
-            value="9"
-            trigger="Does De helps with Invoicing and How Do I get paid?"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            maiores provident non nobis sed ratione laboriosam, impedit nam quam
-            fugit error, dolores praesentium. Fugit illum modi, tempore non
-            molestiae nesciunt. Officiis dicta modi voluptatem blanditiis
-            dolore.
+          <AccordianItem value="4" trigger="How Do I Get Paid? ">
+            You can receive payment through your factoring company by submitting
+            the necessary paperwork, or directly from the brokers via standard
+            payment terms or quick pay. We will handle the payment processing
+            from the brokers at no extra charge.
           </AccordianItem>
         </Accordion>
       </div>

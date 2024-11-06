@@ -8,35 +8,35 @@ export default function Footer() {
       </a>
       <div className="mx-auto grid grid-cols-3 justify-items-center gap-y-8 pr-1 md:gap-x-48">
         <ul className="space-y-2">
-          <li className="">
+          <li className="hover:text-golden-accent sm:text-xl md:text-base lg:text-xl">
             <a href="#" className="">
               Home
             </a>
           </li>
-          <li className="">
+          <li className="hover:text-golden-accent sm:text-xl md:text-base lg:text-xl">
             <a href="#about" className="">
               About
             </a>
           </li>
         </ul>
         <ul className="space-y-2">
-          <li className="">
+          <li className="hover:text-golden-accent sm:text-xl md:text-base lg:text-xl">
             <a href="#contact">Contact</a>
           </li>
-          <li className="">
+          <li className="hover:text-golden-accent sm:text-xl md:text-base lg:text-xl">
             <a href="mailto:">Email Us</a>
           </li>
         </ul>
         <ul className="space-y-2">
-          <li className="">
+          <li className="hover:text-golden-accent sm:text-xl md:text-base lg:text-xl">
             <a href="#services">Services</a>
           </li>
-          <li className="">
+          <li className="hover:text-golden-accent sm:text-xl md:text-base lg:text-xl">
             <a href="#what_we_move">What we move</a>
           </li>
         </ul>
 
-        <ul className="col-span-3 mt-4 items-center gap-x-8 space-y-3 lg:flex lg:py-4">
+        <ul className="col-span-3 mt-4 items-center gap-x-8 space-y-3 lg:flex lg:py-4 xl:gap-x-16">
           <div className="mx-auto mt-3 flex h-14 max-w-[256px] items-center gap-x-2 rounded-3xl bg-[#40434c] px-2 hover:font-bold">
             <div className="rounded-full bg-blue-600 p-2">
               <svg
