@@ -13,7 +13,7 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "true",
-    "APP_URL": "dispatch-web-voidrak-voidraks-projects.vercel.app",
+    "APP_URL": "https://dispatch-dpb0x7p9o-voidraks-projects.vercel.app",
     "APP_KEY": "base64:UJNgQLq6RR8ZYsqIXwb78NSQv+BhM0VFZIqrYnq81No=",
 
     "APP_CONFIG_CACHE": "/tmp/config.php",
