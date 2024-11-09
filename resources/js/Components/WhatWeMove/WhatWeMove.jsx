@@ -9,11 +9,6 @@ export default function WhatWeMove() {
           <h1 className="text-nowrap text-4xl font-extrabold sm:text-6xl lg:text-8xl 2xl:text-9xl">
             What We Move
           </h1>
-          <p className="mt-4 sm:text-xl lg:max-w-[600px]">
-            What We Move" covers all types of cargo truck dispatchers handle,
-            from raw materials to consumer goods, ensuring efficient and timely
-            deliveries.
-          </p>
         </div>
       </RevealXLeft>
       <div className="mx-auto grid max-w-[437x] grid-cols-2 gap-1 pt-16 min-[450px]:px-2 sm:grid-cols-3 md:px-6 lg:px-8 xl:max-w-[1280px] xl:gap-3 xl:px-16 2xl:min-w-[1536px]">
