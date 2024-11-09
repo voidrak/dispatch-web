@@ -17,11 +17,13 @@ export default function AboutUs() {
             Truck Dispatch Services:
           </h2>
           <p className="mt-4 text-sm xl:text-base">
-            Keyway-dispatch LLC is a “Full Service” truck dispatching company
-            that handles all of the back-office work so you can compete with the
-            large fleets. Typically, a large carrier would hire somebody to
-            handle all of these tasks, but it is unaffordable for a small
-            carrier, that’s where Keyway-dispatcher LLC comes in to help!
+            ABC LLC is a full-service truck dispatching company dedicated to
+            managing all back-office operations, allowing small carriers to
+            compete effectively with larger fleets. While large carriers often
+            employ in-house staff to handle these tasks, this option is often
+            cost-prohibitive for smaller operators. ABC LLC bridges this gap by
+            providing professional support tailored to the needs of smaller
+            carriers.
           </p>
         </div>
       </RevealXLeft>
